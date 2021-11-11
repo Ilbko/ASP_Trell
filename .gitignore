@@ -363,3 +363,6 @@ MigrationBackup/
 FodyWeavers.xsd
 
 *.json
+/Trello_API/Migrations/TrelloDbContextModelSnapshot.cs
+/Trello_API/Migrations/20211110004217_Init-Migration.cs
+/Trello_API/Migrations/20211110004217_Init-Migration.Designer.cs

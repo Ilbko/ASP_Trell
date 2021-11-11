@@ -9,9 +9,9 @@ using Trello_API.Areas.Identity.Data;
 
 namespace Trello_API.Data
 {
-    public class DbContext : IdentityDbContext<ApplicationUser>
+    public class TrelloDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbContext(DbContextOptions<DbContext> options)
+        public TrelloDbContext(DbContextOptions<TrelloDbContext> options)
             : base(options)
         {
         }

@@ -16,12 +16,12 @@ namespace Trello_API.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                services.AddDbContext<DbContext>(options =>
+                services.AddDbContext<TrelloDbContext>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("DbContextConnection")));
 
                 services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<DbContext>();
+                    .AddEntityFrameworkStores<TrelloDbContext>();
             });
         }
     }
